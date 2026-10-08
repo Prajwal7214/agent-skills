@@ -1,0 +1,33 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment & secrets
+.env
+*.env
+*.env.*
+*.pem
+*.key
+
+# Temporary & cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+node_modules/
+.npm/
+.bun/
+dist/
+build/
+*.tmp
+*.log
