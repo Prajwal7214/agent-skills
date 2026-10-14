@@ -12,7 +12,10 @@ This repository brings together workflow methodologies, automation extensions, a
 agent-skills/
 ├── README.md
 ├── .gitignore
-├── claude/                            # Skills for Claude Code CLI / Agent
+├── claude/                            # Skills & Rules for Claude Code CLI / Agent
+│   ├── CLAUDE.md                      # Global instructions template for Claude
+│   ├── rules/
+│   │   └── token-optimization.md      # Output token minimization & concise output rule
 │   ├── built-in-browser/
 │   ├── canvas-design/
 │   ├── chrome-browser/
@@ -58,6 +61,15 @@ agent-skills/
         ├── ui-extension/
         └── ui-plugin-navigation/
 ```
+
+---
+
+## 📜 Claude Global Instructions & Rules
+
+| Rule / File | Purpose |
+|---|---|
+| [`claude/CLAUDE.md`](claude/CLAUDE.md) | Global system instructions enforcing strict token minimization, direct answers, and concise output across all projects |
+| [`claude/rules/token-optimization.md`](claude/rules/token-optimization.md) | Focused token optimization rule preventing filler, greetings, and unrequested explanations |
 
 ---
 
@@ -126,6 +138,20 @@ agent-skills/
 ## 📥 How to Use & Install
 
 ### For Claude Code
+
+#### 1. Set Global Token Optimization Instructions (All Projects)
+To enforce token optimization and terse output globally across all your projects when using Claude:
+
+```bash
+# Set global instruction for Claude Code
+cp claude/CLAUDE.md ~/.claude/CLAUDE.md
+
+# Optional: set as global rule
+mkdir -p ~/.claude/rules
+cp claude/rules/token-optimization.md ~/.claude/rules/
+```
+
+#### 2. Install Claude Skills
 To use these skills with Claude Code, copy the desired skill folder to your personal Claude skills directory:
 
 ```bash
