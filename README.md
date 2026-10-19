@@ -29,6 +29,7 @@ agent-skills/
 │   ├── morning/
 │   ├── pdf/
 │   ├── pptx/
+│   ├── security-audit/
 │   ├── skill-creator/
 │   └── xlsx/
 └── antigravity/                       # Skills for Antigravity CLI / IDE
@@ -42,6 +43,7 @@ agent-skills/
     │   ├── generating-skills/
     │   ├── receiving-code-review/
     │   ├── requesting-code-review/
+    │   ├── security-audit/
     │   ├── subagent-driven-development/
     │   ├── systematic-debugging/
     │   ├── test-driven-development/
@@ -90,6 +92,7 @@ agent-skills/
 | `morning` | Daily morning routines, task prioritization, and briefing |
 | `pdf` | PDF document analysis, extraction, and generation |
 | `pptx` | PowerPoint presentation authoring and formatting |
+| `security-audit` | Comprehensive security guidance, vulnerability review, and penetration testing workflows |
 | `skill-creator` | Interactive generator for authoring new Claude skills |
 | `xlsx` | Excel workbook generation, formulas, and tabular data handling |
 
@@ -110,6 +113,7 @@ agent-skills/
 | `generating-skills` | Scaffolds new Antigravity skills following predefined templates |
 | `receiving-code-review` | Technical evaluation and rigorous handling of code review feedback |
 | `requesting-code-review` | Verification and preparation of code before requesting review/merging |
+| `security-audit` | Defensive security guidance, vulnerability research, and codebase audit workflows |
 | `subagent-driven-development` | Plan execution by delegating independent tasks to subagents |
 | `systematic-debugging` | Root-cause analysis and hypothesis testing before proposing bug fixes |
 | `test-driven-development` | Test-Driven Development (TDD) discipline and red-green-refactor loop |
